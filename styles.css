@@ -1,19 +1,19 @@
 /* General Styles */
 body {
-    font-family: 'Roboto Slab', serif; /* Edgy font for modern look */
-    background-color: #000000; /* Black background for contrast */
-    color: #ffffff; /* White text for readability */
+    font-family: 'Roboto Slab', serif;
+    background-color: #000000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
 }
 
 /* Navigation */
 nav {
-    border: 1px solid #3b3d5c; /* Light blue border for the box */
-    border-radius: 8px; /* Rounded corners */
-    margin: 10px 20px; /* Spacing from edges */
-    background-color: #1a1b33; /* Dark blue background for the navbar */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border: 1px solid #3b3d5c;
+    border-radius: 8px;
+    margin: 10px 20px;
+    background-color: #1a1b33;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -41,60 +41,61 @@ header {
     padding: 20px;
 }
 
-/* Contact Form Section */
-.contact-form-section {
-    max-width: 600px;
-    margin: 20px auto; /* Center section horizontally */
+/* Visit Link Styling */
+.visit-link a {
+    color: #ffffff; /* White text for the link */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make it stand out */
 }
 
-.contact-form-section h2,
-.contact-form-section p {
-    text-align: center;
+.visit-link a:hover {
+    color: #7e7fa0; /* Light blue on hover for contrast */
 }
 
-/* Contact Form Styling */
-.contact-form {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    gap: 15px; /* Space between form elements */
+/* Car Gallery Section */
+.car-gallery {
+    display: grid; /* Use grid layout for cars */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between car boxes */
+    padding: 20px;
 }
 
-.contact-form label {
+/* Individual Car Boxes */
+.car {
+    background-color: #1a1b33; /* Dark blue background for car boxes */
+    color: #ffffff; /* White text for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.car h2 {
+    font-size: 20px;
+}
+
+.car p {
     font-size: 16px;
+    line-height: 1.6;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+/* Scrollable Image Container Inside Car Boxes */
+.car-images-scroll {
+    display: flex; /* Align images horizontally */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 10px; /* Space between images */
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #888; /* Placeholder text color */
-}
-
-.contact-form button {
-    background-color: #7e7fa0; /* Light blue button to match theme */
-    color: #ffffff; /* White text for contrast */
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    background-color: #3b3d5c; /* Slightly darker blue on hover */
+.car-images-scroll img {
+    height: 150px; /* Consistent height for all images */
+    border-radius: 5px; /* Rounded corners for images */
 }
 
 /* Responsive Design Adjustments */
 /* For small screens (mobile) */
 @media (max-width: 768px) {
-    .contact-form-section {
+    .car-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller columns on tablets */
+        gap: 15px; /* Reduce spacing between boxes */
         padding-left :10 px
  }
 }
