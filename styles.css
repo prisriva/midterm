@@ -228,3 +228,13 @@ header {
         width: 90%;
     }
 }
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1a1b33;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}

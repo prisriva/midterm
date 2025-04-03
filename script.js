@@ -100,3 +100,5 @@ function adjustColorBrightness(hex, amount) {
 
     return adjustedHex;
 }
+
+
