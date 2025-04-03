@@ -39,6 +39,8 @@ nav ul li a:hover {
 header {
     text-align: center;
     padding: 20px;
+ 
+
 }
 
 /* Visit Link Styling */
@@ -237,4 +239,8 @@ header {
     color: #ffffff;
     text-align: center;
     padding: 10px;
+}
+
+h1 {
+    color: #78799e; 
 }
