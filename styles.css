@@ -108,7 +108,7 @@ header {
 .contact-form {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    gap: 15px; /* Add consistent spacing between form elements */
+    gap: 15px; 
 }
 
 .contact-form label {
@@ -147,8 +147,11 @@ header {
 /* scrollable image container for car boxes */
 .car-images-scroll {
     display: flex; 
+    justigy-content: center;
+    align-items: center;
     overflow-x: auto; 
-    gap: 10px; 
+    gap: 10px;
+    padding: 10px; 
 }
 
 .car-images-scroll img {
@@ -184,16 +187,6 @@ header {
     margin-bottom: 20px; 
 }
 
-/* Image Styling */
-.about-me-image {
-    margin-bottom: 20px; 
-}
-
-.about-me-image img {
-    width: 100%; 
-    max-width: 300px; 
-    border-radius: 10px; 
-}
 
 /* Button Styling */
 .learn-more {
