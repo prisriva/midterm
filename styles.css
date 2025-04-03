@@ -240,7 +240,7 @@ body {
 
 /* Push footer to bottom */
 .site-footer {
-    margin-top: auto; /* Pushes footer to the bottom */
+    margin-bottom: auto; /* Pushes footer to the bottom */
     background-color: rcdb: (0,0,0,0); /* Matches theme */
     color: #ffffff; /* White text for readability */
     text-align: center;
