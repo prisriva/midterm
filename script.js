@@ -15,34 +15,41 @@ const colorChoice = prompt(`Hi ${userName}, pick a background color:
 1 for Dark Grey,
 2 for Midnight Black`);
 
-// Apply the selected color scheme or default to Deep Navy
+
 if (colors[colorChoice]) {
     const selectedColors = colors[colorChoice];
 
-    // Update body styles
+
     document.body.style.backgroundColor = selectedColors.bg;
     document.body.style.color = selectedColors.text;
 
-    // Update header and nav styles
+   
     document.querySelector("header").style.backgroundColor = selectedColors.nav;
     const navElement = document.querySelector("nav");
     if (navElement) {
         navElement.style.backgroundColor = selectedColors.nav;
-        navElement.style.border = `1px solid ${adjustColorBrightness(selectedColors.nav, -20)}`; // Slightly darker border
-        navElement.style.boxShadow = `0 2px 8px ${adjustColorBrightness(selectedColors.nav, -50)}`; // Subtle shadow
+        navElement.style.border = `1px solid ${adjustColorBrightness(selectedColors.nav, -20)}`; // slightly darker border
+        navElement.style.boxShadow = `0 2px 8px ${adjustColorBrightness(selectedColors.nav, -50)}`; 
     }
 
     // Update all car sections
     document.querySelectorAll(".car").forEach(car => {
         car.style.backgroundColor = selectedColors.car;
         car.style.color = selectedColors.text;
-        car.style.borderRadius = "8px"; // Add rounded corners for aesthetics
-        car.style.padding = "15px"; // Add padding inside the car boxes
-        car.style.boxShadow = `0 2px 8px ${adjustColorBrightness(selectedColors.car, -30)}`; // Subtle shadow for depth
+        car.style.borderRadius = "8px";
+        car.style.padding = "15px"; 
+        car.style.boxShadow = `0 2px 8px ${adjustColorBrightness(selectedColors.car, -30)}`; 
+    });
+
+ 
+    document.querySelectorAll(".contact-form-section, .visit-link").forEach(section => {
+        section.style.backgroundColor = selectedColors.bg;
+        section.style.color = selectedColors.text;
     });
 } else {
-    alert("Invalid choice. Defaulting to Deep Navy.");
+    alert(" Default to Deep Navy.");
     const defaultColors = colors[0];
+    
     document.body.style.backgroundColor = defaultColors.bg;
     document.body.style.color = defaultColors.text;
 
@@ -61,9 +68,14 @@ if (colors[colorChoice]) {
         car.style.padding = "15px";
         car.style.boxShadow = `0 2px 8px ${adjustColorBrightness(defaultColors.car, -30)}`;
     });
+
+    document.querySelectorAll(".contact-form-section, .visit-link").forEach(section => {
+        section.style.backgroundColor = defaultColors.bg;
+        section.style.color = defaultColors.text;
+    });
 }
 
-// Helper function to adjust brightness of a hex color
+
 function adjustColorBrightness(hex, amount) {
     let usePound = false;
 

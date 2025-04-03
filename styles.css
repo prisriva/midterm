@@ -78,15 +78,30 @@ header {
     line-height: 1.6;
 }
 
+
+.scroll-container {
+    display: flex; */
+    overflow-x: auto; 
+    gap: 10px; 
+    padding: 10px;
+    white-space: nowrap; 
+}
+
+.scroll-container img {
+    height: 150px; /* Set consistent height for images */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+
 /* Contact Form Section */
 .contact-form-section {
-    max-width: 600px; /* Limit width of the form container for readability */
-    margin: 20px auto; /* Center the form horizontally and add vertical spacing */
+    max-width: 600px; 
+    margin: 20px auto; 
 }
 
 .contact-form-section h2,
 .contact-form-section p {
-    text-align: center; /* Center-align the heading and paragraph text */
+    text-align: center; 
 }
 
 /* Contact Form Styling */
@@ -102,51 +117,98 @@ header {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%; /* Full width of the container */
+    width: 100%; 
     padding: 10px;
-    border-radius: 5px; /* Rounded corners for input fields and textarea */
-    border: none; /* Remove default borders for a clean look */
-    background-color: #1a1b33; /* Match theme with dark blue background */
-    color: #ffffff; /* White text for readability on dark background */
+    border-radius: 5px; */
+    border: none; 
+    background-color: #1a1b33; /* match theme with dark blue background */
+    color: #ffffff; /* white text for readability on dark background */
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #888; /* Placeholder text color to contrast with input background */
+    color: #888; /* placeholder text  */
 }
 
 .contact-form button {
-    background-color: #7e7fa0; /* Light blue button to match theme colors */
-    color: #ffffff; /* White text for contrast against button background */
+    background-color: #7e7fa0; 
+    color: #ffffff; 
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 5px; /* Rounded corners to match inputs and theme style */
+    border-radius: 5px; 
     border: none;
-    cursor: pointer; /* Pointer cursor to indicate interactivity on hover */
+    cursor: pointer; 
 }
 
 .contact-form button:hover {
-    background-color: #3b3d5c; /* Slightly darker blue on hover to indicate interaction */
+    background-color: #3b3d5c; 
 }
-/* Scrollable Image Container Inside Car Boxes */
+/* scrollable image container for car boxes */
 .car-images-scroll {
-    display: flex; /* Align images horizontally */
-    overflow-x: auto; /* Enable horizontal scrolling */
-    gap: 10px; /* Space between images */
+    display: flex; 
+    overflow-x: auto; 
+    gap: 10px; 
 }
 
 .car-images-scroll img {
-    height: 150px; /* Consistent height for all images */
-    border-radius: 5px; /* Rounded corners for images */
+    height: 150px; 
+    border-radius: 5px; 
 }
 
 /* Responsive Design Adjustments */
 /* For small screens (mobile) */
 @media (max-width: 768px) {
     .car-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Smaller columns on tablets */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
         gap: 15px; /* Reduce spacing between boxes */
         padding-left :10 px
  }
 }
+/* About Me Section */
+.about-me {
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.about-me h2 {
+    font-size: 28px; 
+    margin-bottom: 20px; /
+}
+
+.about-me p {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+/* Image Styling */
+.about-me-image {
+    margin-bottom: 20px; 
+}
+
+.about-me-image img {
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 10px; 
+}
+
+/* Button Styling */
+.learn-more {
+    background-color: #7e7fa0; 
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; 
+    border: none;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #3b3d5c; 
+}
+
+
