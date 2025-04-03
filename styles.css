@@ -78,6 +78,57 @@ header {
     line-height: 1.6;
 }
 
+/* Contact Form Section */
+.contact-form-section {
+    max-width: 600px; /* Limit width of the form container for readability */
+    margin: 20px auto; /* Center the form horizontally and add vertical spacing */
+}
+
+.contact-form-section h2,
+.contact-form-section p {
+    text-align: center; /* Center-align the heading and paragraph text */
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Add consistent spacing between form elements */
+}
+
+.contact-form label {
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for input fields and textarea */
+    border: none; /* Remove default borders for a clean look */
+    background-color: #1a1b33; /* Match theme with dark blue background */
+    color: #ffffff; /* White text for readability on dark background */
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888; /* Placeholder text color to contrast with input background */
+}
+
+.contact-form button {
+    background-color: #7e7fa0; /* Light blue button to match theme colors */
+    color: #ffffff; /* White text for contrast against button background */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners to match inputs and theme style */
+    border: none;
+    cursor: pointer; /* Pointer cursor to indicate interactivity on hover */
+}
+
+.contact-form button:hover {
+    background-color: #3b3d5c; /* Slightly darker blue on hover to indicate interaction */
+}
 /* Scrollable Image Container Inside Car Boxes */
 .car-images-scroll {
     display: flex; /* Align images horizontally */
