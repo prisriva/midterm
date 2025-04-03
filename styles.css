@@ -55,6 +55,38 @@ header {
 }
 
 /* Car Gallery Section */
+/* Car Gallery Section */
+.car-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduce minimum width */
+    gap: 15px; /* Reduce spacing between items */
+    padding: 15px; /* Reduce padding around the gallery */
+}
+
+/* Individual Car Boxes */
+.car {
+    background-color: #1a1b33;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 10px; /* Reduce padding inside each car box */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Slightly smaller shadow for a compact look */
+}
+
+.car h2 {
+    font-size: 18px; /* Reduce font size for car titles */
+}
+
+.car p {
+    font-size: 14px; /* Reduce font size for descriptions */
+    line-height: 1.4; /* Adjust line height for compactness */
+}
+
+/* Scrollable Image Container for Cars */
+.scroll-container img {
+    height: 120px; /* Reduce image height */
+    border-radius: 5px;
+}
+
 .car-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
