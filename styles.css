@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Slab', serif; /* Edgy font for modern look */
+    background-color: #000000; /* Black background for contrast */
+    color: #ffffff; /* White text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    border: 1px solid #3b3d5c; /* Light blue border for the box */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px 20px; /* Spacing from edges */
+    background-color: #1a1b33; /* Dark blue background for the navbar */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #7e7fa0; /* Light blue text for links */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #3b3d5c; 
+}
+
+/* Page Header */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    max-width: 600px;
+    margin: 20px auto; /* Center section horizontally */
+}
+
+.contact-form-section h2,
+.contact-form-section p {
+    text-align: center;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Space between form elements */
+}
+
+.contact-form label {
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888; /* Placeholder text color */
+}
+
+.contact-form button {
+    background-color: #7e7fa0; /* Light blue button to match theme */
+    color: #ffffff; /* White text for contrast */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #3b3d5c; /* Slightly darker blue on hover */
+}
+
+/* Responsive Design Adjustments */
+/* For small screens (mobile) */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding-left :10 px
+ }
+}
