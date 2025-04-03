@@ -230,17 +230,20 @@ header {
         width: 90%;
     }
 }
-
-.site-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0,0,0,0);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+/* Ensure the body takes up the full height of the viewport */
+body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
-h1 {
-    color: #78799e; 
+/* Push footer to bottom */
+.site-footer {
+    margin-top: auto; /* Pushes footer to the bottom */
+    background-color: rcdb: (0,0,0,0); /* Matches theme */
+    color: #ffffff; /* White text for readability */
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
 }
