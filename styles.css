@@ -279,3 +279,12 @@ body {
     padding: 10px;
     font-size: 16px;
 }
+
+
+
+/* nav click event tracking */
+<nav class="container">
+      <a href="index.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Home'})">Home</a>
+      <a href="about.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'About'})">About</a>
+      <a href="contact.html" class="box" onclick="gtag('event', 'nav_click', {event_category: 'navigation', event_label: 'Contact'})">Contact</a>
+    </nav>
